@@ -1,0 +1,23 @@
+{
+  "name": "sample-media-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjmonsi/sample-media-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjmonsi/sample-media-api/issues"
+  },
+  "homepage": "https://github.com/tjmonsi/sample-media-api#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
