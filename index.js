@@ -20,12 +20,18 @@
 
         const closeClick = () => {
           video.pause();
-          if (stream) {
-            const tracks = stream.getTracks();
-            tracks.forEach(track => {
-              track.stop();
-            });
-          }
+          //New code to fix closing issue of camera - Niccolo Lampa
+
+          video.src ="";
+          stream.getTracks()[0].stop();
+
+          //old buggy code to be deleted.           
+          // if (stream) {
+          //   const tracks = stream.getTracks();
+          //   tracks.forEach(track => {
+          //     track.stop();
+          //   });
+          // }
         };
 
         const captureClick = () => {
